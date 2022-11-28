@@ -1,12 +1,12 @@
 const wrapperEl  = document.getElementById('wrapper')
 const quoteEl = document.getElementById('quote')
 const authorEl = document.getElementById('author')
-const quoteBtn = document.getElementById('btn')
+const quoteBtnEl = document.getElementById('btn')
 
 let quotesArray = []
 
 
-quoteBtn.addEventListener('click', getQuoteData)
+quoteBtnEl.addEventListener('click', getQuoteData)
 
 async function getQuoteData(){
     let response = await fetch('https://type.fit/api/quotes')
